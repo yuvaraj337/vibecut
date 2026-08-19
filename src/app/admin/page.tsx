@@ -27,9 +27,7 @@ export default function AdminPage() {
 
     const result = await getAppointments();
 
-    if (result.success) {
-      setAppointments(result.data || []);
-    }
+setAppointments(result || []);
 
     setLoading(false);
   }
